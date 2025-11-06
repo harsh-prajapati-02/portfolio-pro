@@ -1,0 +1,41 @@
+.neon-cursor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Small center dot */
+.cursor-main {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #EB5939;
+  box-shadow: 0 0 10px #EB5939, 0 0 20px #EB5939;
+}
+
+/* Slight trailing ring */
+.cursor-trail {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #EB5939;
+  opacity: 0.7;
+  box-shadow: 0 0 15px #EB5939;
+}
+
+/* Outer glowing halo */
+.cursor-glow {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #EB5939 0%, transparent 70%);
+  opacity: 0.4;
+  filter: blur(15px);
+}
