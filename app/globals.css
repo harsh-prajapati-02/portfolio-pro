@@ -1,9 +1,39 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Avant Garde Book BT';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/AVGARDD_2.woff') format('woff');
+}
+
 html,
 body {
   /* cursor: none !important; */
   background-color: #0D0D0D;
+  font-family: 'Avant Garde Book BT';
+}
+
+.paragraph {
+  display: flex;
+  font-size: 60px;
+  line-height: 1;
+  padding: 40px;
+  max-width: 1280px;
+  color: white;
+  flex-wrap: wrap;
+
+  .word {
+    position: relative;
+    margin-right: 12px;
+    margin-top: 12px;
+
+    .shadow {
+      position: absolute;
+      opacity: 20%;
+    }
+  }
+
 }
 
 .staggered-menu-wrapper {
