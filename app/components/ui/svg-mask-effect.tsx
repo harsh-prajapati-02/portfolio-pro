@@ -7,7 +7,7 @@ export const MaskContainer = ({
     children,
     revealText,
     size = 35,
-    revealSize = 200,
+    revealSize = 300,
     className,
 }: {
     children?: React.ReactNode;

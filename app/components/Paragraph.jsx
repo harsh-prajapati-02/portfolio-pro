@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import styles from './style.module.scss';
 
 export default function Paragraph({paragraph}) {
