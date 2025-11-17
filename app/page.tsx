@@ -11,7 +11,7 @@ import MagneticIcons from "./components/MagneticIcons";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
+export default function Home() { 
   useEffect(() => {
     gsap.fromTo(
       ".fade-section",
